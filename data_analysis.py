@@ -20,7 +20,7 @@ def talk_2_ai(df):
         if prompt:
             with st.spinner():
                 # spark the run
-                pandas_ai.run(df, prompt=prompt,show_code=True)
+                pandas_ai.run(df, prompt=prompt)#,show_code=True)
 
                 #retrive the log
                 mylog = pandas_ai.logs
